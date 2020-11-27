@@ -14892,7 +14892,7 @@ It appears kernel alterations are only feasible for small number of iterations (
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
@@ -15170,7 +15170,7 @@ with 6+iterations it generates artifacts.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[126]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
@@ -15216,6 +15216,7 @@ with 6+iterations it generates artifacts.</p>
     <span class="n">sp</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
         
     <span class="k">if</span> <span class="n">center_coef</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">autoAxis</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">axis</span><span class="p">()</span>
         <span class="n">rec</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">patches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="n">autoAxis</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">autoAxis</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="mf">0.002</span><span class="p">),(</span><span class="n">autoAxis</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">autoAxis</span><span class="p">[</span><span class="mi">0</span><span class="p">]),(</span><span class="n">autoAxis</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">-</span><span class="n">autoAxis</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="mf">0.01</span><span class="p">),</span><span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
         <span class="n">rec</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">rec</span><span class="p">)</span>
         <span class="n">rec</span><span class="o">.</span><span class="n">set_clip_on</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
@@ -15226,7 +15227,7 @@ with 6+iterations it generates artifacts.</p>
 
 <span class="s2">&lt;br&gt;</span>
 <span class="s2">Only one (github) kernel converges: $(\frac</span><span class="si">{1}{4}</span><span class="s2">, \frac</span><span class="si">{1}{2}</span><span class="s2">, \frac</span><span class="si">{1}{4}</span><span class="s2">)$&lt;br&gt;</span>
-<span class="s2">Moving away from this value steadily increases noice</span>
+<span class="s2">Moving away from this value steadily increases noise</span>
 <span class="s2">&lt;br&gt;&lt;br&gt;</span>
 
 <span class="s2">**Question:** is there only one converging kernel for each given size, or larger sizes can have multiple different convering kernels?</span>
@@ -15288,7 +15289,7 @@ with 6+iterations it generates artifacts.</p>
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output " data-mime-type="text/markdown">
 <p><br>
 Only one (github) kernel converges: $(\frac{1}{4}, \frac{1}{2}, \frac{1}{4})$<br>
-Moving away from this value steadily increases noice
+Moving away from this value steadily increases noise
 <br><br></p>
 <p><strong>Question:</strong> is there only one converging kernel for each given size, or larger sizes can have multiple different convering kernels?</p>
 
